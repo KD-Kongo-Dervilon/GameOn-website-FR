@@ -1,59 +1,86 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
   <head>
     <meta charset="utf-8" />
+    <!--============= Title =============-->
     <title>Reservation</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <!--=========== Modal Css ============-->
     <link rel="stylesheet" href="modal.css" />
+    <!--======= Link Font awesome ========-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link
-      href="https://fonts.googleapis.com/css?family=DM+Sans"
-      rel="stylesheet"
-    />
+    <!--========= Link Google Font =======-->
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans" rel="stylesheet"/>
   </head>
+  
+  
   <body>
+
+    <!--========= Div Header Start =======-->
     <div class="topnav" id="myTopnav">
       <div class="header-logo">
-      <img alt="logo" src="Logo.png" width="auto" height="auto" />
-    </div>
-    <div class="main-navbar">
+        <img alt="logo" src="Logo.png" width="auto" height="auto" />
+      </div>
       
-      <a href="#" class="active"><span>Accueil</span></a>
-      <a href="#"><span>Détails de l'évènement</span></a>
-      <a href="#"><span>À propos</span></a>
-      <a href="#"><span>Contact</span></a>
-      <a href="#"><span>Évènements passés</span></a>
-      <a href="javascript:void(0);" class="icon" onclick="editNav()">
-        <i class="fa fa-bars"></i>
-      </a>
+      <!--==== Navbar Start ===-->
+      <div class="main-navbar">
+        <a href="#" class="active"><span>Accueil</span></a>
+        <a href="#"><span>Détails de l'évènement</span></a>
+        <a href="#"><span>À propos</span></a>
+        <a href="#"><span>Contact</span></a>
+        <a href="#"><span>Évènements passés</span></a>
+        <a href="javascript:void(0);" class="icon" onclick="editNav()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <!--==== Navbar End =====-->
+
     </div>
-    </div>
-  </div>
+    <!--============ Div Header End =======-->
+
+
+    
+    <!--=========== Main Start ============-->
     <main>
+      
+      <!--===== Section Start ====-->
       <div class="hero-section">
+        
+        <!--==== Hero Start ===-->
         <div class="hero-content">
           <h1 class="hero-headline">
             Marathon national<br>
             de jeux vidéos
           </h1>
+          
           <p class="hero-text">
             Vous aimez jouer ? Notre prochain évènement gaming est ouvert
             aux réservations... Places limitées !
           </p>
+          
           <button class="btn-signup modal-btn">
             je m'inscris
           </button>
         </div>
+        <!--==== Hero End ===-->
+
         <div class="hero-img">
           <img src="./bg_img.jpg" alt="img" />
         </div>
+
         <button class="btn-signup modal-btn">
           je m'inscris
         </button>
       </div>
-
+      <!--===== Section End ====-->
+      
+      <!--===== Section bground Start ====-->
       <div class="bground">
+
         <div class="content">
+          <!--==span pour fermer le modal -->
           <span class="close"></span>
           <div class="modal-body">
             <form
@@ -209,12 +236,22 @@
           </div>
         </div>
       </div>
+      <!--===== Section bground End ====-->
+
     </main>
+    <!--=========== Main End ============-->
+    
+    
+    <!--=== Footer Start ======-->
     <footer>
       <p class="copyrights">
         Copyright 2014 - 2020, GameOn Inc.
       </p>
     </footer>
+    <!--=== Footer End ======-->
+    
+    
+    <!--======== Modal Js ======-->
     <script src="modal.js"></script>
   </body>
 </html>
