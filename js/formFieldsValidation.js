@@ -54,6 +54,7 @@ const checkEmail = () => {
 
 // function checkBirthdate
 const checkBirthdate = () => {
+
     if (birthdate.value.trim().length !== 10) {
         birthdate.parentElement.setAttribute('data-error-visible', 'true');
         birthdate.classList.add(FormData.error)
@@ -138,6 +139,20 @@ function formValidation() {
         checkTournamentsQuantity() === true &&
         checkLocations() === true &&
         checkCheckbox()  === true) {
+            // Objet for all
+            const data = {
+                firstName,
+                lastName,
+                email,
+                birthdate,
+                quantity,
+                allLocations,
+                locations,
+                checkbox1,
+                input,
+            }
+            console.log(data.firstName.value)
+            lastReservation.innerHTML = data.firstName.value;
         return true;
     }
     return false;

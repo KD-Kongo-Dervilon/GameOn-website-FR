@@ -25,3 +25,14 @@ const closeModal = () => {
 
 // close modal event 
 closeBtn.addEventListener('click', (closeModal));
+
+// ------ DISPLAY NAV RESPONSIVE ------ //
+// EDIT NAV
+function editNav() {
+  var x = document.getElementById('myTopnav');
+  if (x.className === 'topnav') {
+    x.className += ' responsive';
+  } else {
+    x.className = 'topnav';
+  }
+}
