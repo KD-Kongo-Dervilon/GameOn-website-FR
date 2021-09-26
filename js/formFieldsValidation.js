@@ -151,8 +151,7 @@ function formValidation() {
                 checkbox1,
                 input,
             }
-            
-            lastReservation.innerHTML = 'merci ' +  data.firstName.value  + ' pour votre réservation ';
+            lastReservation.innerHTML = ' Thank you ' +  data.firstName.value  + '<br> for submitting you <br>  registration details';
         return true;
     }
     return false;
