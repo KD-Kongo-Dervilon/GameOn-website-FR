@@ -55,14 +55,19 @@ const checkEmail = () => {
 // function checkBirthdate
 const checkBirthdate = () => {
 
-    if (birthdate.value.trim().length !== 10) {
-        birthdate.parentElement.setAttribute('data-error-visible', 'true');
-        birthdate.classList.add(FormData.error)
-        return false;
+    const ageInput = document.getElementById('birthdate').value;
+    const regExAge = /(19\d\d|20[0-3])(-\d\d){2}/;
+    const isAgeValid = regExAge.test(ageInput);
+
+    console.log(isAgeValid)
+    if(isAgeValid) {
+        birthdate.parentElement.setAttribute('data-error-visible', 'false');
+        birthdate.style.border = '0.19rem solid #279e7a';
+        return true;
     }
-    birthdate.parentElement.setAttribute('data-error-visible', 'false');
-    birthdate.style.border = '0.19rem solid #279e7a';
-    return true;
+    birthdate.parentElement.setAttribute('data-error-visible', 'true');
+    birthdate.classList.add(FormData.error)
+    return false;
 };
 
 // NUMBER OF TOURNAMENTS CHECK
